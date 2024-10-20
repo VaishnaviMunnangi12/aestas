@@ -1,0 +1,91 @@
+.holderCircle {
+    width: 100%;
+    height: auto;
+    margin: 60px auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dotLine {
+    width: 80%;
+    height: 2px;
+    border-bottom: 2px dotted #ca9700;
+    margin: 40px 0;
+    position: relative;
+}
+
+.dotCircle {
+    width: 100%;
+    height: auto;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    margin-top: -80px;
+    /* Position items above the dotted line */
+}
+
+.dotCircle .itemDot {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    background: #ffffff;
+    color: #ca9700;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 80px;
+    font-size: 30px;
+    cursor: pointer;
+    border: 2px solid #e6e6e6;
+    position: relative;
+}
+
+.dotCircle .itemDot:hover,
+.dotCircle .itemDot.active {
+    color: #ffffff;
+    background: #ca9700;
+    border: 2px solid #ffffff;
+    box-shadow: 0 30px 30px 0 rgba(0, 0, 0, .13);
+    transition: 0.5s;
+}
+
+.contentCircle {
+    width: 100%;
+    color: #222222;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.contentCircle .CirItem {
+    color: #222222;
+    text-align: center;
+    opacity: 0;
+    transform: scale(0);
+    transition: 0.5s;
+    font-size: 15px;
+    width: 100%;
+}
+
+.CirItem.active {
+    opacity: 1;
+    transform: scale(1);
+    transition: 0.5s;
+}
+
+.title-box .title {
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.title-box span {
+    font-weight: 800;
+    color: #ca9700;
+}
+
+.title-box p {
+    font-size: 17px;
+    line-height: 2em;
+}
